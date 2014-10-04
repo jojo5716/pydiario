@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
-import os
 
 class Diario():
     def __init__(self, texto, redmine):
         self.hoy = datetime.today()
         self.texto = texto
-        self.ruta = '/Users/jonathanrodriguez/'
+        #Donde se va a guardar el fichero
+        self.ruta = ''
 
         if not redmine:
             redmine = 'No tiene tarea asignada.'
@@ -14,7 +14,7 @@ class Diario():
         self.redmine = redmine
 
     def existe_dia(self, nombre):
-        libreta = fichero = open('%s%s'%(self.ruta, nombre), "r")
+        libreta =  open('%s%s'%(self.ruta, nombre), "r")
         for linea in libreta.readlines():
             if linea.startswith('@'):
                 fecha = linea.split('@')[1]
@@ -31,7 +31,7 @@ class Diario():
     def guardar_diario(self):
         nombre = "diario-%s.txt"%self.hoy.month
 
-        libreta = fichero = open('%s%s'%(self.ruta, nombre), "a")
+        libreta =  open('%s%s'%(self.ruta, nombre), "a")
         existe = self.existe_dia(nombre)
         if self.texto or self.redmine:
             if not existe:
