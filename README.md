@@ -1,7 +1,7 @@
 pydiario
 ========
 
-Diario personal a traves de la shell.
+<b>Diario personal a traves de la shell.</b>
 
 Registramos nuestra actividad diaria en un fichero mensual, cada día podremos ir anotando nuestras notas sin necesidad de abrir el archivo cada vez o tener que dejarlo abierto, simplemente creamos un alias permanente que nos apunte al fichero diario.py y desde la shell podremos ir agregando informacion.
 
@@ -26,39 +26,6 @@ MODO DE USO:
 Al escribir pydiario nos permitira escribir alguna nota sobre lo que hemos hecho hoy, cada vez que este comando se ejecute ira rellenando un archivo que genera automaticamente mensualmente, donde diariamente veras todas las anotaciones que hayas hecho.
 
 luego te preguntara un localizador de redmine (Yo uso Redmine para administrar mi tiempo en los proyectos y asi cuando reviso mis diarios mensuales puedo ver la relacion de lo que hice con lo asignado en el redmine) Si no tienes éste localizador no pasa nada.
-
-El fichero que genera automaticamente se veria algo asi:
-
-@ ____________________________ 2014-10-03
-
-####
-#
-#                Titulo: he terminado X modulo
-#                Redmine: No tiene tarea asignada.
-#                Hora: 21:19:20
-#
-####
-
-
-@ ____________________________ 2014-10-04
-
-####
-#
-#                Titulo: Prueba 1 del uso pydiario
-#                Redmine: No tiene tarea asignada.
-#                Hora: 11:16:29
-#
-####
-
-
-####
-#
-#                Titulo: Esta es otra prueba usando pydiario desde la terminal
-#                Redmine: No tiene tarea asignada.
-#                Hora: 11:16:47
-#
-####
-
 
 Saludos
 
